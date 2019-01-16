@@ -113,11 +113,11 @@ context Via inv nombresEstacionDiferentes:
     Via.allInstances()->select(v:Via | v<>self and v.nombre = self.nombre)->size()=0
 
 -- b) Todas las estaciones tienen nombres diferentes
-context Estacion inv nombresEstacionDistintos:
+context Estacion inv nombresEstacionDistintos: --FAIL, attr
     Estacion.allInstances()->select(e:Estacion | e<>self and e.nombre = self.nombre)->size()=0
 
 -- c) En cada estacion nTrenes coincide con el numero de trenes en la estacion
-context Estacion inv nTrenesCorrecto:
+context Estacion inv nTrenesCorrecto: --FAIL
     self.nTrenes = self.tren->size()
 
 -- d) En cada tramo, hay a lo sumo un tren
@@ -125,7 +125,7 @@ context Tramo inv unTren:
     self.tren->size()<=1
 
 -- e) En cada tramo, nTrenes coincide con el numero de trenes en cada tramo
-context Tramo inv nTrenesCorrectoTramo:
+context Tramo inv nTrenesCorrectoTramo: --FAIL
     self.nTrenes = self.tren->size()
 
 -- f) En cada via, nTrenes, coincide con el numero de trenes en esa via
@@ -138,3 +138,7 @@ context Via inv nTrenesCorrectoVia:
         self.nTrenes = self.estacionEste.nTrenes + self.estacionOeste.nTrenes + 
                     self.ultimo.nTrenes + self.inter.nTrenes + self.primero.nTrenes
     endif
+
+-- g) Cada tren esta en una estacion o en un tramo de via pero no en los dos simultaneamente
+context Tren inv estacionOTramo:
+    self.posicionTren->size()=1
