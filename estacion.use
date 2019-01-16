@@ -1,0 +1,45 @@
+model ferrocarriles
+
+abstract class ComponenteDeRed
+ attributes
+    nTrenes:Integer
+end
+
+class Tramo < ComponenteDeRed
+end
+
+class Estacion < ComponenteDeRed
+ attributes
+ nombre:String
+end
+
+class Via
+ attributes
+ nTrenes:Integer
+ nombre:String
+end
+
+class Tren
+end
+
+
+association Conexion between
+    Tramo[1] role teste
+    Tramo[1] role toeste
+end 
+
+association EsteViaEstacion between
+    Via[1] role viaOeste
+    Estacion[1] role estacionEste
+end 
+
+association OesteViaEstacion between
+    Via[1] role viaEste
+    Estacion[1] role estacionOeste
+end 
+
+association ComponenteTren between
+    Tren[*] role viaEste
+    ComponenteDeRed[1] role estacionOeste
+end 
+
