@@ -93,8 +93,8 @@ context Via inv unTramo:
     self.inter.teste->size() = 1 and self.primero.teste->size() = 1 and
     self.inter.toeste->size() = 1 and self.ultimo.toeste->size() = 1
 
---e) Cada v´ıa puede tener, a lo sumo, un tramo intermedio que se conecta al este con el primer
---tramo de la v´ıa y al oeste con el ultimo.
+--e) Cada viıa puede tener, a lo sumo, un tramo intermedio que se conecta al este con el primer
+--tramo de la viıa y al oeste con el ultimo.
 context Via inv oesteEsteTramo:
     if self.inter.oclIsUndefined()
     then true
