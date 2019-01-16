@@ -9,14 +9,14 @@ class Tramo < ComponenteDeRed
 end
 
 class Estacion < ComponenteDeRed
- attributes
- nombre:String
+    attributes
+    nombre:String
 end
 
 class Via
- attributes
- nTrenes:Integer
- nombre:String
+    attributes
+    nTrenes:Integer
+    nombre:String
 end
 
 class Tren
@@ -26,8 +26,8 @@ end
 
 
 association Conexion between
-    Tramo[1] role teste
-    Tramo[1] role toeste
+    Tramo[0..1] role teste
+    Tramo[0..1] role toeste
 end 
 
 association EsteViaEstacion between
@@ -61,9 +61,37 @@ composition ultimoTramoVia between
 end
 
 constraints
+    
+-- CONDICIONES DEL ENUNCIADO
 
+-- PROPIEDADES SOBRE LA ESTRUCTURA DE RED
 
+-- a) Cada estacion tiene una via al este y una via al oeste
+-- Esta especificada en el modello
 
+-- b) Cada via conecta dos estaciones diferentes
+context Via inv conexionDiferente:
+    not(self.estacionOeste.oclIsUndefined()) and not(self.estacionEste.oclIsUndefined()) and
+    self.estacionOeste <> self.estacionEste
+
+-- c) Cada via tiene un unico primer tramo y un unico ultimo tramo, yendo de este a oeste
+-- La unicidad se especifica en la relacion
+context Via inv tramosPrimeroUltimo:
+    if (self.inter.oclIsUndefined())
+    then 
+        self.primero.teste = self.ultimo and
+        self.ultimo.toeste = self.primero
+    else 
+        self.primero.teste = self.inter and
+        self.inter.teste = self.ultimo and
+        self.ultimo.toeste = self.inter and
+        self.inter.toeste = self.primero
+    endif
+
+-- d) Cada tramo, salvo el primero, tiene un tramo al oeste, y cada tramo, salvo el ultimo tiene un tramo al este         
+context Via inv unTramo:
+    self.inter.teste->size() = 1 and self.primero.teste->size() = 1 and
+    self.inter.toeste->size() = 1 and self.ultimo.toeste->size() = 1
 
 --e) Cada v´ıa puede tener, a lo sumo, un tramo intermedio que se conecta al este con el primer
 --tramo de la v´ıa y al oeste con el ultimo.
@@ -76,4 +104,37 @@ context Via inv oesteEsteTramo:
 --f ) Cada Tramo es de una via
 context Tramo inv alMenosUnaVia:
     (((self.viaInter->asBag())->union(self.viau->asBag()))->union(self.viap->asBag()))->size()=1
+
     
+-- PROPIEDADES SOBRE LOS ATRIBUTOS DEL SISTEMA
+
+-- a) Todas las vias tienen nombres diferentes
+context Via inv nombresEstacionDiferentes:
+    Via.allInstances()->select(v:Via | v<>self and v.nombre = self.nombre)->size()=0
+
+-- b) Todas las estaciones tienen nombres diferentes
+context Estacion inv nombresEstacionDistintos:
+    Estacion.allInstances()->select(e:Estacion | e<>self and e.nombre = self.nombre)->size()=0
+
+-- c) En cada estacion nTrenes coincide con el numero de trenes en la estacion
+context Estacion inv nTrenesCorrecto:
+    self.nTrenes = self.tren->size()
+
+-- d) En cada tramo, hay a lo sumo un tren
+context Tramo inv unTren:
+    self.tren->size()<=1
+
+-- e) En cada tramo, nTrenes coincide con el numero de trenes en cada tramo
+context Tramo inv nTrenesCorrectoTramo:
+    self.nTrenes = self.tren->size()
+
+-- f) En cada via, nTrenes, coincide con el numero de trenes en esa via
+context Via inv nTrenesCorrectoVia:
+    if self.inter.oclIsUndefined()
+    then
+        self.nTrenes = self.estacionEste.nTrenes + self.estacionOeste.nTrenes + 
+                    self.ultimo.nTrenes + self.primero.nTrenes
+    else
+        self.nTrenes = self.estacionEste.nTrenes + self.estacionOeste.nTrenes + 
+                    self.ultimo.nTrenes + self.inter.nTrenes + self.primero.nTrenes
+    endif
