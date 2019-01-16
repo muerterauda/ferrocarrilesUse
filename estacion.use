@@ -45,15 +45,27 @@ end
 
 composition primerTramoVia between
     Via[0..1] role viap
-    Tramo[*] role primero
+    Tramo[1] role primero
 end
 
 composition interTramoVia between
     Via[0..1] role viaInter
-    Tramo[*] role inter
+    Tramo[0..1] role inter
 end
 
 composition ultimoTramoVia between
     Via[0..1] role viau
-    Tramo[*] role ultimo
+    Tramo[1] role ultimo
 end
+
+constraints
+
+context Tramo inv alMenosUnaVia:
+    (((self.viaInter->asBag())->union(self.viau->asBag()))->union(self.viap->asBag()))->size()=1
+
+
+--d) Cada tramo, salvo el primero tiene un tramo al este y cada tramo, salvo el ´ultimo, tiene otro
+--tramo al oeste.
+--e) Cada v´ıa puede tener, a lo sumo, un tramo intermedio que se conecta al este con el primer
+--tramo de la v´ıa y al oeste con el ultimo.
+--f ) Todos los tramos pertenecen a una unica vıa
