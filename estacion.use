@@ -39,7 +39,21 @@ association OesteViaEstacion between
 end 
 
 association ComponenteTren between
-    Tren[*] role viaEste
-    ComponenteDeRed[1] role estacionOeste
+    Tren[*] role tren
+    ComponenteDeRed[1] role posicionTren
 end 
 
+composition primerTramoVia between
+    Via[0..1] role viap
+    Tramo[*] role primero
+end
+
+composition interTramoVia between
+    Via[0..1] role viaInter
+    Tramo[*] role inter
+end
+
+composition ultimoTramoVia between
+    Via[0..1] role viau
+    Tramo[*] role ultimo
+end
