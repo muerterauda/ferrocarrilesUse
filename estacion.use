@@ -20,6 +20,8 @@ class Via
 end
 
 class Tren
+attributes
+ posicion:String
 end
 
 
@@ -29,13 +31,13 @@ association Conexion between
 end 
 
 association EsteViaEstacion between
-    Via[1] role viaOeste
-    Estacion[1] role estacionEste
+    Via[1] role viaEste
+    Estacion[1] role estacionOeste
 end 
 
 association OesteViaEstacion between
-    Via[1] role viaEste
-    Estacion[1] role estacionOeste
+    Via[1] role viaOeste
+    Estacion[1] role estacionEste
 end 
 
 association ComponenteTren between
@@ -60,12 +62,18 @@ end
 
 constraints
 
-context Tramo inv alMenosUnaVia:
-    (((self.viaInter->asBag())->union(self.viau->asBag()))->union(self.viap->asBag()))->size()=1
 
 
---d) Cada tramo, salvo el primero tiene un tramo al este y cada tramo, salvo el ´ultimo, tiene otro
---tramo al oeste.
+
 --e) Cada v´ıa puede tener, a lo sumo, un tramo intermedio que se conecta al este con el primer
 --tramo de la v´ıa y al oeste con el ultimo.
---f ) Todos los tramos pertenecen a una unica vıa
+context Via inv oesteEsteTramo:
+    if self.inter.oclIsUndefined()
+    then true
+    else self.inter.teste=self.primero and self.inter.toeste=self.ultimo
+    endif
+
+--f ) Cada Tramo es de una via
+context Tramo inv alMenosUnaVia:
+    (((self.viaInter->asBag())->union(self.viau->asBag()))->union(self.viap->asBag()))->size()=1
+    
