@@ -89,16 +89,27 @@ context Via inv tramosPrimeroUltimo:
     endif
 
 -- d) Cada tramo, salvo el primero, tiene un tramo al oeste, y cada tramo, salvo el ultimo tiene un tramo al este         
-context Via inv unTramo:
-    self.inter.teste->size() = 1 and self.primero.teste->size() = 1 and
-    self.inter.toeste->size() = 1 and self.ultimo.toeste->size() = 1
+context Tramo inv unTramo:
+    (if self.viap->size()>0
+    then
+        true
+    else
+        self.toeste->size()=1
+    endif)
+    and 
+    (if self.viau->size()>0
+    then
+        true
+    else
+        self.teste->size()=1
+    endif)
 
---e) Cada viıa puede tener, a lo sumo, un tramo intermedio que se conecta al este con el primer
---tramo de la viıa y al oeste con el ultimo.
+--e) Cada via puede tener, a lo sumo, un tramo intermedio que se conecta al 0este con el primer
+--tramo de la via y al este con el ultimo.
 context Via inv oesteEsteTramo:
     if self.inter.oclIsUndefined()
     then true
-    else self.inter.teste=self.primero and self.inter.toeste=self.ultimo
+    else self.inter.teste=self.ultimo and self.inter.toeste=self.primero
     endif
 
 --f ) Cada Tramo es de una via
@@ -132,13 +143,20 @@ context Tramo inv nTrenesCorrectoTramo: --FAIL
 context Via inv nTrenesCorrectoVia:
     if self.inter.oclIsUndefined()
     then
-        self.nTrenes = self.estacionEste.nTrenes + self.estacionOeste.nTrenes + 
-                    self.ultimo.nTrenes + self.primero.nTrenes
+        self.nTrenes = self.ultimo.nTrenes + self.primero.nTrenes
     else
-        self.nTrenes = self.estacionEste.nTrenes + self.estacionOeste.nTrenes + 
-                    self.ultimo.nTrenes + self.inter.nTrenes + self.primero.nTrenes
+        self.nTrenes =  self.ultimo.nTrenes + self.inter.nTrenes + self.primero.nTrenes
     endif
 
 -- g) Cada tren esta en una estacion o en un tramo de via pero no en los dos simultaneamente
 context Tren inv estacionOTramo:
     self.posicionTren->size()=1
+
+--h) La posicion de cada tren coincide o bien con el nombre de la estacion en la que en cuentra, o bien con el nombre de la via del tramo en el que se encuentra.
+context Tren inv posicionIgualNombre:
+let com: ComponenteDeRed=self.posicionTren in 
+    if com.oclIsTypeOf(Estacion)
+    then (com.oclAsType(Estacion)).nombre = self.posicion
+    else let comVia: Tramo= com.oclAsType(Tramo) in 
+        (((comVia.viaInter->asBag())->union(comVia.viau->asBag()))->union(comVia.viap->asBag()))->asSequence()->first().nombre = self.posicion
+    endif
