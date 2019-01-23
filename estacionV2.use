@@ -13,11 +13,37 @@ abstract class ComponenteDeRed
 end
 
 class Tramo < ComponenteDeRed
+ operations
+    entraTren(t:Tren)
+        begin
+            insert(t,self) into ComponenteTren;
+            self.actualizaTrenes();
+        end
+        pre: self.nTrenes=0
+        post: self.nTrenes=1 and self.tren=t
+    saleTren(t:Tren)
+        begin
+            delete(t,self) from ComponenteTren;
+            self.actualizaTrenes();
+        end
+        pre: self.nTrenes=1 and self.tren=t
+        post: self.nTrenes=0 and self.tren=undefined
 end
 
 class Estacion < ComponenteDeRed
     attributes
     nombre:String
+    operations
+        entraTren(t:Tren)
+            begin
+            end
+            pre: true
+            post: true
+        saleTren(t:Tren)
+            begin
+            end
+            pre: true
+            post: true
 end
 
 class Via
@@ -37,8 +63,9 @@ class Via
 end
 
 class Tren
-attributes
- posicion:String
+ attributes
+    posicion:String
+ 
 end
 
 
