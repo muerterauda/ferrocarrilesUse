@@ -3,6 +3,13 @@ model ferrocarriles
 abstract class ComponenteDeRed
  attributes
     nTrenes:Integer
+ operations
+    actualizaTrenes()
+        begin
+            self.nTrenes:= self.tren->size();
+        end
+    pre: true
+    post: true
 end
 
 class Tramo < ComponenteDeRed
@@ -14,9 +21,19 @@ class Estacion < ComponenteDeRed
 end
 
 class Via
-    attributes
+ attributes
     nTrenes:Integer
     nombre:String
+  operations
+    actualizaTrenes()
+        begin
+            if(self.inter.oclIsUndefined())
+            then self.nTrenes:= self.primero.nTrenes+self.ultimo.nTrenes;
+            else self.nTrenes:= self.primero.nTrenes+self.ultimo.nTrenes+self.inter.nTrenes;
+            end;
+        end
+    pre: true
+    post: true
 end
 
 class Tren

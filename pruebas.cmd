@@ -50,3 +50,6 @@
 !insert (T1,T10) into Conexion;
 !insert (T10,T2) into Conexion;
 --------------------------------
+
+!V1.actualizaTrenes();
+!E1.actualizaTrenes();
