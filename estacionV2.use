@@ -1,0 +1,162 @@
+model ferrocarriles
+
+abstract class ComponenteDeRed
+ attributes
+    nTrenes:Integer
+end
+
+class Tramo < ComponenteDeRed
+end
+
+class Estacion < ComponenteDeRed
+    attributes
+    nombre:String
+end
+
+class Via
+    attributes
+    nTrenes:Integer
+    nombre:String
+end
+
+class Tren
+attributes
+ posicion:String
+end
+
+
+association Conexion between
+    Tramo[0..1] role teste
+    Tramo[0..1] role toeste
+end 
+
+association EsteViaEstacion between
+    Via[1] role viaEste
+    Estacion[1] role estacionOeste
+end 
+
+association OesteViaEstacion between
+    Via[1] role viaOeste
+    Estacion[1] role estacionEste
+end 
+
+association ComponenteTren between
+    Tren[*] role tren
+    ComponenteDeRed[1] role posicionTren
+end 
+
+composition primerTramoVia between
+    Via[0..1] role viap
+    Tramo[1] role primero
+end
+
+composition interTramoVia between
+    Via[0..1] role viaInter
+    Tramo[0..1] role inter
+end
+
+composition ultimoTramoVia between
+    Via[0..1] role viau
+    Tramo[1] role ultimo
+end
+
+constraints
+    
+-- CONDICIONES DEL ENUNCIADO
+
+-- PROPIEDADES SOBRE LA ESTRUCTURA DE RED
+
+-- a) Cada estacion tiene una via al este y una via al oeste
+-- Esta especificada en el modello
+
+-- b) Cada via conecta dos estaciones diferentes
+context Via inv conexionDiferente:
+    not(self.estacionOeste.oclIsUndefined()) and not(self.estacionEste.oclIsUndefined()) and
+    self.estacionOeste <> self.estacionEste
+
+-- c) Cada via tiene un unico primer tramo y un unico ultimo tramo, yendo de este a oeste
+-- La unicidad se especifica en la relacion
+context Via inv tramosPrimeroUltimo:
+    if (self.inter.oclIsUndefined())
+    then 
+        self.primero.teste = self.ultimo and
+        self.ultimo.toeste = self.primero
+    else 
+        self.primero.teste = self.inter and
+        self.inter.teste = self.ultimo and
+        self.ultimo.toeste = self.inter and
+        self.inter.toeste = self.primero
+    endif
+
+-- d) Cada tramo, salvo el primero, tiene un tramo al oeste, y cada tramo, salvo el ultimo tiene un tramo al este         
+context Tramo inv unTramo:
+    (if self.viap->size()>0
+    then
+        true
+    else
+        self.toeste->size()=1
+    endif)
+    and 
+    (if self.viau->size()>0
+    then
+        true
+    else
+        self.teste->size()=1
+    endif)
+
+--e) Cada via puede tener, a lo sumo, un tramo intermedio que se conecta al 0este con el primer
+--tramo de la via y al este con el ultimo.
+context Via inv oesteEsteTramo:
+    if self.inter.oclIsUndefined()
+    then true
+    else self.inter.teste=self.ultimo and self.inter.toeste=self.primero
+    endif
+
+--f ) Cada Tramo es de una via
+context Tramo inv alMenosUnaVia:
+    (((self.viaInter->asBag())->union(self.viau->asBag()))->union(self.viap->asBag()))->size()=1
+
+    
+-- PROPIEDADES SOBRE LOS ATRIBUTOS DEL SISTEMA
+
+-- a) Todas las vias tienen nombres diferentes
+context Via inv nombresEstacionDiferentes:
+    Via.allInstances()->select(v:Via | v<>self and v.nombre = self.nombre)->size()=0
+
+-- b) Todas las estaciones tienen nombres diferentes
+context Estacion inv nombresEstacionDistintos: --FAIL, attr
+    Estacion.allInstances()->select(e:Estacion | e<>self and e.nombre = self.nombre)->size()=0
+
+-- c) En cada estacion nTrenes coincide con el numero de trenes en la estacion
+context Estacion inv nTrenesCorrecto: --FAIL
+    self.nTrenes = self.tren->size()
+
+-- d) En cada tramo, hay a lo sumo un tren
+context Tramo inv unTren:
+    self.tren->size()<=1
+
+-- e) En cada tramo, nTrenes coincide con el numero de trenes en cada tramo
+context Tramo inv nTrenesCorrectoTramo: --FAIL
+    self.nTrenes = self.tren->size()
+
+-- f) En cada via, nTrenes, coincide con el numero de trenes en esa via
+context Via inv nTrenesCorrectoVia:
+    if self.inter.oclIsUndefined()
+    then
+        self.nTrenes = self.ultimo.nTrenes + self.primero.nTrenes
+    else
+        self.nTrenes =  self.ultimo.nTrenes + self.inter.nTrenes + self.primero.nTrenes
+    endif
+
+-- g) Cada tren esta en una estacion o en un tramo de via pero no en los dos simultaneamente
+context Tren inv estacionOTramo:
+    self.posicionTren->size()=1
+
+--h) La posicion de cada tren coincide o bien con el nombre de la estacion en la que en cuentra, o bien con el nombre de la via del tramo en el que se encuentra.
+context Tren inv posicionIgualNombre:
+let com: ComponenteDeRed=self.posicionTren in 
+    if com.oclIsTypeOf(Estacion)
+    then (com.oclAsType(Estacion)).nombre = self.posicion
+    else let comVia: Tramo= com.oclAsType(Tramo) in 
+        (((comVia.viaInter->asBag())->union(comVia.viau->asBag()))->union(comVia.viap->asBag()))->asSequence()->first().nombre = self.posicion
+    endif
