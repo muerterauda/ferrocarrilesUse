@@ -30,6 +30,14 @@ association Conexion between
     Tramo[0..1] role toeste
 end 
 
+association SalirEstacion between
+    Tren[0..1] role sigSalir
+    Estacion[0..1] role estacion
+
+association TrenesEstacion between
+    Tren[*] role tren ordered
+    posicionTren[0..1] role posicionTren
+
 association EsteViaEstacion between
     Via[1] role viaEste
     Estacion[1] role estacionOeste
