@@ -24,6 +24,9 @@ class Tramo < ComponenteDeRed
         begin
             insert(t,self) into ComponenteTren;
             self.actualizaTrenes();
+            if not self.viap.oclIsUndefined()
+            then self.viap.actualizaTrenes()
+            end;
         end
         pre: self.nTrenes=0
         post: self.nTrenes=1 and self.tren->includes(t)
@@ -31,8 +34,11 @@ class Tramo < ComponenteDeRed
         begin
             delete(t,self) from ComponenteTren;
             self.actualizaTrenes();
+            if not self.viau.oclIsUndefined()
+            then self.viau.actualizaTrenes()
+            end;
         end
-        pre: self.nTrenes=1 and self.tren->includes(t)
+        pre: self.nTrenes=1 and self.tren->includes(t) and if self.teste.oclIsUndefined() then else self.teste.nTrenes=0
         post: self.nTrenes=0 and self.tren->excludes(t)
 end
 
@@ -42,19 +48,34 @@ class Estacion < ComponenteDeRed
     operations
         entraTren(t:Tren)
             begin
+                insert(t,self) into ComponenteTren;
+                self.actualizaTrenes();
+                self.actSiguienteEnSalir()
             end
-            pre: true
-            post: true
+            pre: self.tren->excludes(t)
+            post:  self.tren->includes(t) and self.nTrenes-1=self.nTrenes@pre
         saleTren(t:Tren)
             begin
+                delete(t,self) from ComponenteTren;
+                self.actualizaTrenes();
+                self.actSiguienteEnSalir()
             end
-            pre: true
-            post: true
+            pre: self.tren->includes(t) and self.nTrenes>0 and self.sigSalir=t and self.viaEste.primero.nTrenes=0
+            post: self.nTrenes+1=self.nTrenes@pre and self.tren->excludes(t)
         actSiguienteEnSalir()
             begin
+                if self.sigSalir->size()>0
+                then if self.tren->first()<>self.sigSalir
+                    then delete(self.sigSalir,self) from SalirEstacion;
+                        insert(self.tren->first(),self) into SalirEstacion;
+                    end;
+                else if self.tren->size()>0
+                    then insert(self.tren->first(),self) into SalirEstacion;
+                    end;
+                end;
             end
             pre: true
-            post: true
+            post: (self.tren->size()=0 and self.sigSalir.oclIsUndefined()) or (self.tren->first()=self.sigSalir)
 end
 
 class Via
