@@ -1,5 +1,6 @@
 model ferrocarriles
 
+
 abstract class ComponenteDeRed
  attributes
     nTrenes:Integer
@@ -12,6 +13,11 @@ abstract class ComponenteDeRed
     post: true
 end
 
+class Tren
+ attributes
+    posicion:String
+end
+
 class Tramo < ComponenteDeRed
  operations
     entraTren(t:Tren)
@@ -20,14 +26,14 @@ class Tramo < ComponenteDeRed
             self.actualizaTrenes();
         end
         pre: self.nTrenes=0
-        post: self.nTrenes=1 and self.tren=t
+        post: self.nTrenes=1 and self.tren->includes(t)
     saleTren(t:Tren)
         begin
             delete(t,self) from ComponenteTren;
             self.actualizaTrenes();
         end
-        pre: self.nTrenes=1 and self.tren=t
-        post: self.nTrenes=0 and self.tren=undefined
+        pre: self.nTrenes=1 and self.tren->includes(t)
+        post: self.nTrenes=0 and self.tren->excludes(t)
 end
 
 class Estacion < ComponenteDeRed
@@ -40,6 +46,11 @@ class Estacion < ComponenteDeRed
             pre: true
             post: true
         saleTren(t:Tren)
+            begin
+            end
+            pre: true
+            post: true
+        actSiguienteEnSalir()
             begin
             end
             pre: true
@@ -61,13 +72,6 @@ class Via
     pre: true
     post: true
 end
-
-class Tren
- attributes
-    posicion:String
- 
-end
-
 
 association Conexion between
     Tramo[0..1] role teste
