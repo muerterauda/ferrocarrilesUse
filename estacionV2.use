@@ -38,7 +38,10 @@ class Tramo < ComponenteDeRed
             then self.viau.actualizaTrenes()
             end;
         end
-        pre: self.nTrenes=1 and self.tren->includes(t) and if self.teste.oclIsUndefined() then else self.teste.nTrenes=0
+        pre: self.nTrenes=1 and self.tren->includes(t) and if not self.teste.oclIsUndefined() 
+        then self.teste.nTrenes=0 
+        else true
+        endif
         post: self.nTrenes=0 and self.tren->excludes(t)
 end
 
@@ -67,7 +70,7 @@ class Estacion < ComponenteDeRed
                 if self.sigSalir->size()>0
                 then if self.tren->first()<>self.sigSalir
                     then delete(self.sigSalir,self) from SalirEstacion;
-                        insert(self.tren->first(),self) into SalirEstacion;
+                         insert(self.tren->first(),self) into SalirEstacion;
                     end;
                 else if self.tren->size()>0
                     then insert(self.tren->first(),self) into SalirEstacion;
