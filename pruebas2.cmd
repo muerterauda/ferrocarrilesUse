@@ -31,6 +31,7 @@
 !V2.nombre:='Via1'
 
 !insert (Tr3,E1) into ComponenteTren;
+!insert (Tr3,E1) into SalirEstacion;
 !insert (Tr2,T1) into ComponenteTren;
 !insert (Tr1,T10) into ComponenteTren;
 
