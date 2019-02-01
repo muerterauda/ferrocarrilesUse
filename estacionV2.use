@@ -215,7 +215,7 @@ context Tramo inv unTramo:
         self.teste->size()=1
     endif)
 
---e) Cada via puede tener, a lo sumo, un tramo intermedio que se conecta al 0este con el primer
+--e) Cada via puede tener, a lo sumo, un tramo intermedio que se conecta al oeste con el primer
 --tramo de la via y al este con el ultimo.
 context Via inv oesteEsteTramo:
     if self.inter.oclIsUndefined()
