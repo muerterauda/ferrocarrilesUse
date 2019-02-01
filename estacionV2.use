@@ -1,6 +1,5 @@
 model ferrocarriles
 
-
 abstract class ComponenteDeRed
  attributes
     nTrenes:Integer
@@ -16,6 +15,38 @@ end
 class Tren
  attributes
     posicion:String
+ operations
+    actualizaPosicion()
+        begin 
+            declare t : Tramo;
+            if self.posicionTren.oclIsTypeOf(Estacion)
+            then self.posicion:=self.posicionTren.oclAsType(Estacion).nombre;
+            else    t:=self.posicionTren.oclAsType(Tramo);
+                    self.posicion:=(((t.viaInter->asBag())->
+                    union(t.viau->asBag()))->union(t.viap->asBag()))->
+                    any(true).nombre;
+            end;
+        end
+        pre: not self.posicionTren.oclIsUndefined
+        post: true
+    meMuevo()
+        begin 
+            declare t : Tramo, e : Estacion;
+            if self.posicionTren.oclIsTypeOf(Estacion)
+            then e:=self.posicionTren.oclAsType(Estacion);
+                 e.saleTren(self);
+                 e.viaEste.primero.entraTren(self);
+            else  t:=self.posicionTren.oclAsType(Tramo);
+                  t.saleTren(self);
+                  if t.viau.oclIsUndefined()
+                  then t.teste.entraTren(self);
+                  else t.viau.estacionEste.entraTren(self);
+                  end;
+            end;
+            self.actualizaPosicion()
+        end
+        pre: true
+        post: true
 end
 
 class Tramo < ComponenteDeRed
@@ -67,10 +98,13 @@ class Estacion < ComponenteDeRed
             post: self.nTrenes+1=self.nTrenes@pre and self.tren->excludes(t)
         actSiguienteEnSalir()
             begin
-                if self.sigSalir->size()>0
-                then if self.tren->first()<>self.sigSalir
+                if self.sigSalir->size()>0  
+                then if self.tren->isEmpty()
                     then delete(self.sigSalir,self) from SalirEstacion;
+                    else if self.tren->first()<>self.sigSalir
+                         then delete(self.sigSalir,self) from SalirEstacion;
                          insert(self.tren->first(),self) into SalirEstacion;
+                        end;
                     end;
                 else if self.tren->size()>0
                     then insert(self.tren->first(),self) into SalirEstacion;
