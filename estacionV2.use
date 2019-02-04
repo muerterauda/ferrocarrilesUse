@@ -4,6 +4,7 @@ abstract class ComponenteDeRed
  attributes
     nTrenes:Integer
  operations
+    -- Actualizamos correctamente el valor de la variable nTrenes
     actualizaTrenes()
         begin
             self.nTrenes:= self.tren->size();
@@ -16,6 +17,7 @@ class Tren
  attributes
     posicion:String
  operations
+    -- Se modifica el atributo posicion al correspondiente dependiendo del movimiento del tren
     actualizaPosicion()
         begin 
             declare t : Tramo;
@@ -29,6 +31,7 @@ class Tren
         end
         pre: not self.posicionTren.oclIsUndefined
         post: true
+    -- Mueve el tren de oeste a este
     meMuevo()
         begin 
             declare t : Tramo, e : Estacion;
@@ -51,6 +54,7 @@ end
 
 class Tramo < ComponenteDeRed
  operations
+    -- Se modela la entrada de un tren t al tramo
     entraTren(t:Tren)
         begin
             insert(t,self) into ComponenteTren;
@@ -61,6 +65,7 @@ class Tramo < ComponenteDeRed
         end
         pre: self.nTrenes=0
         post: self.nTrenes=1 and self.tren->includes(t)
+    -- Se modela la salida de un tren t al tramo
     saleTren(t:Tren)
         begin
             delete(t,self) from ComponenteTren;
@@ -78,8 +83,9 @@ end
 
 class Estacion < ComponenteDeRed
     attributes
-    nombre:String
+        nombre:String
     operations
+        -- Se modela la entrada del tren t a la estacion
         entraTren(t:Tren)
             begin
                 insert(t,self) into ComponenteTren;
@@ -88,6 +94,7 @@ class Estacion < ComponenteDeRed
             end
             pre: self.tren->excludes(t)
             post:  self.tren->includes(t) and self.nTrenes-1=self.nTrenes@pre
+        -- Se modela la salida del tren t de la estacion
         saleTren(t:Tren)
             begin
                 delete(t,self) from ComponenteTren;
@@ -96,6 +103,7 @@ class Estacion < ComponenteDeRed
             end
             pre: self.tren->includes(t) and self.nTrenes>0 and self.sigSalir=t and self.viaEste.primero.nTrenes=0
             post: self.nTrenes+1=self.nTrenes@pre and self.tren->excludes(t)
+        -- Se actualiza el siguiente tren en la relacion que debe salir de la estacion 
         actSiguienteEnSalir()
             begin
                 if self.sigSalir->size()>0  
@@ -120,6 +128,7 @@ class Via
     nTrenes:Integer
     nombre:String
   operations
+    -- Actualizamos correctamente el valor de la variable nTrenes
     actualizaTrenes()
         begin
             if(self.inter.oclIsUndefined())
