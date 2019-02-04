@@ -5,6 +5,7 @@
 !new Tren('Tr3');
 !Tr3.posicion:='Antequera';
 
+
 !new Estacion('E1');
 !E1.nTrenes:=1;
 !E1.nombre:='Antequera';
@@ -49,7 +50,3 @@
 !insert (T12,T11) into Conexion;
 !insert (T1,T10) into Conexion;
 !insert (T10,T2) into Conexion;
---------------------------------
-
-!V1.actualizaTrenes();
-!E1.actualizaTrenes();

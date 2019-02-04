@@ -110,7 +110,7 @@ context Tramo inv unTramo:
 context Via inv oesteEsteTramo:
     if self.inter.oclIsUndefined()
     then true
-    else self.inter.teste=self.ultimo and self.inter.toeste=self.primero
+    else self.inter.teste=self.ultimo and self.inter.toeste=self.primero and self.inter->size()=1
     endif
 
 --f ) Cada Tramo es de una via
@@ -121,7 +121,7 @@ context Tramo inv alMenosUnaVia:
 -- PROPIEDADES SOBRE LOS ATRIBUTOS DEL SISTEMA
 
 -- a) Todas las vias tienen nombres diferentes
-context Via inv nombresEstacionDiferentes:
+context Via inv nombresViasDiferentes:
     Via.allInstances()->select(v:Via | v<>self and v.nombre = self.nombre)->size()=0
 
 -- b) Todas las estaciones tienen nombres diferentes
