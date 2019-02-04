@@ -14,96 +14,96 @@
   <node id="Tr1" sizeCalculated="true" type="Object">
     <name>Tr1</name>
     <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
-      <x>836.5744296491082</x>
-      <y>670.9232244731396</y>
+      <x>55.5744296491082</x>
+      <y>343.9232244731396</y>
     </strategy>
     <hidden>false</hidden>
   </node>
   <node id="T10" sizeCalculated="true" type="Object">
     <name>T10</name>
     <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
-      <x>753.6387200856861</x>
-      <y>590.3004059811709</y>
+      <x>1008.6387200856861</x>
+      <y>299.3004059811709</y>
     </strategy>
     <hidden>false</hidden>
   </node>
   <node id="Tr3" sizeCalculated="true" type="Object">
     <name>Tr3</name>
     <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
-      <x>416.13324630648094</x>
-      <y>20.666015948573744</y>
+      <x>1296.133246306481</x>
+      <y>72.66601594857377</y>
     </strategy>
     <hidden>false</hidden>
   </node>
   <node id="T12" sizeCalculated="true" type="Object">
     <name>T12</name>
     <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
-      <x>115.98586247532984</x>
-      <y>516.4547672132086</y>
+      <x>226.98586247532984</x>
+      <y>408.4547672132086</y>
     </strategy>
     <hidden>false</hidden>
   </node>
   <node id="Tr2" sizeCalculated="true" type="Object">
     <name>Tr2</name>
     <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
-      <x>1051.7116696039634</x>
-      <y>205.80347131868155</y>
+      <x>1190.7116696039634</x>
+      <y>658.8034713186815</y>
     </strategy>
     <hidden>false</hidden>
   </node>
   <node id="T11" sizeCalculated="true" type="Object">
     <name>T11</name>
     <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
-      <x>428.9958124901731</x>
-      <y>541.7548839797906</y>
+      <x>216.99581249017308</x>
+      <y>145.75488397979063</y>
     </strategy>
     <hidden>false</hidden>
   </node>
   <node id="V1" sizeCalculated="true" type="Object">
     <name>V1</name>
     <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
-      <x>284.21196695521337</x>
-      <y>325.65625235891196</y>
+      <x>424.21196695521337</x>
+      <y>259.65625235891196</y>
     </strategy>
     <hidden>false</hidden>
   </node>
   <node id="E1" sizeCalculated="true" type="Object">
     <name>E1</name>
     <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
-      <x>445.4246008723203</x>
-      <y>168.05977597710245</y>
+      <x>580.4246008723203</x>
+      <y>444.0597759771024</y>
     </strategy>
     <hidden>false</hidden>
   </node>
   <node id="V2" sizeCalculated="true" type="Object">
     <name>V2</name>
     <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
-      <x>763.5931503726276</x>
-      <y>183.74377831451412</y>
+      <x>750.5931503726276</x>
+      <y>255.7437783145141</y>
     </strategy>
     <hidden>false</hidden>
   </node>
   <node id="E2" sizeCalculated="true" type="Object">
     <name>E2</name>
     <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
-      <x>509.42093044747423</x>
-      <y>393.1126574419643</y>
+      <x>581.4209304474742</x>
+      <y>85.1126574419643</y>
     </strategy>
     <hidden>false</hidden>
   </node>
   <node id="T1" sizeCalculated="true" type="Object">
     <name>T1</name>
     <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
-      <x>863.7106718685983</x>
-      <y>428.3688913241534</y>
+      <x>981.7106718685982</x>
+      <y>97.36889132415342</y>
     </strategy>
     <hidden>false</hidden>
   </node>
   <node id="T2" sizeCalculated="true" type="Object">
     <name>T2</name>
     <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
-      <x>649.5989388730246</x>
-      <y>439.7776360433802</y>
+      <x>927.5989388730245</x>
+      <y>498.7776360433802</y>
     </strategy>
     <hidden>false</hidden>
   </node>
@@ -141,22 +141,6 @@
         <hidden>false</hidden>
       </edgeproperty>
       <edgeproperty
-        id="[Conexion : (teste:T1, toeste:T10)]::AssociationName"
-        sizeCalculated="true" type="associationName" userDefined="false" visible="true">
-        <name>Conexion</name>
-        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
-          <userOffsetX>0.0</userOffsetX>
-          <userOffsetY>0.0</userOffsetY>
-          <offsetX>0.0</offsetX>
-          <offsetY>-10.0</offsetY>
-          <related length="2">
-            <related0>[Conexion : (teste:T1, toeste:T10)]::WayPoint::0</related0>
-            <related1>[Conexion : (teste:T1, toeste:T10)]::WayPoint::1</related1>
-          </related>
-        </strategy>
-        <hidden>false</hidden>
-      </edgeproperty>
-      <edgeproperty
         id="[Conexion : (teste:T1, toeste:T10)]::target::rolename"
         sizeCalculated="true" type="rolename" userDefined="false" visible="true">
         <name>toeste</name>
@@ -181,6 +165,22 @@
           <offset_x>8</offset_x>
           <offset_y>8</offset_y>
           <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[Conexion : (teste:T1, toeste:T10)]::AssociationName"
+        sizeCalculated="true" type="associationName" userDefined="false" visible="true">
+        <name>Conexion</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <offsetX>0.0</offsetX>
+          <offsetY>-10.0</offsetY>
+          <related length="2">
+            <related0>[Conexion : (teste:T1, toeste:T10)]::WayPoint::0</related0>
+            <related1>[Conexion : (teste:T1, toeste:T10)]::WayPoint::1</related1>
+          </related>
         </strategy>
         <hidden>false</hidden>
       </edgeproperty>
@@ -213,113 +213,6 @@
     </waypoints>
     <hidden>false</hidden>
     <linkValue>[Conexion : (teste:T1, toeste:T10)]</linkValue>
-  </edge>
-  <edge type="BinaryEdge">
-    <source>Tr3</source>
-    <target>E1</target>
-    <name>ComponenteTren</name>
-    <properties>
-      <edgeproperty
-        id="[ComponenteTren : (posicionTren:E1, tren:Tr3)]::source::multiplicity"
-        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
-        <name>*</name>
-        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-          <userOffsetX>0.0</userOffsetX>
-          <userOffsetY>0.0</userOffsetY>
-          <attached>[ComponenteTren : (posicionTren:E1, tren:Tr3)]::WayPoint::0</attached>
-          <offset_x>8</offset_x>
-          <offset_y>8</offset_y>
-          <placement>BOTTOM</placement>
-        </strategy>
-        <hidden>false</hidden>
-      </edgeproperty>
-      <edgeproperty
-        id="[ComponenteTren : (posicionTren:E1, tren:Tr3)]::source::rolename"
-        sizeCalculated="true" type="rolename" userDefined="false" visible="true">
-        <name>tren {ordered}</name>
-        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-          <userOffsetX>0.0</userOffsetX>
-          <userOffsetY>0.0</userOffsetY>
-          <attached>[ComponenteTren : (posicionTren:E1, tren:Tr3)]::WayPoint::0</attached>
-          <offset_x>8</offset_x>
-          <offset_y>8</offset_y>
-          <placement>TOP</placement>
-        </strategy>
-        <hidden>false</hidden>
-      </edgeproperty>
-      <edgeproperty
-        id="[ComponenteTren : (posicionTren:E1, tren:Tr3)]::AssociationName"
-        sizeCalculated="true" type="associationName" userDefined="false" visible="true">
-        <name>ComponenteTren</name>
-        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
-          <userOffsetX>0.0</userOffsetX>
-          <userOffsetY>0.0</userOffsetY>
-          <offsetX>0.0</offsetX>
-          <offsetY>-10.0</offsetY>
-          <related length="2">
-            <related0>[ComponenteTren : (posicionTren:E1, tren:Tr3)]::WayPoint::0</related0>
-            <related1>[ComponenteTren : (posicionTren:E1, tren:Tr3)]::WayPoint::1</related1>
-          </related>
-        </strategy>
-        <hidden>false</hidden>
-      </edgeproperty>
-      <edgeproperty
-        id="[ComponenteTren : (posicionTren:E1, tren:Tr3)]::target::multiplicity"
-        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
-        <name>1</name>
-        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-          <userOffsetX>0.0</userOffsetX>
-          <userOffsetY>0.0</userOffsetY>
-          <attached>[ComponenteTren : (posicionTren:E1, tren:Tr3)]::WayPoint::1</attached>
-          <offset_x>8</offset_x>
-          <offset_y>8</offset_y>
-          <placement>BOTTOM</placement>
-        </strategy>
-        <hidden>false</hidden>
-      </edgeproperty>
-      <edgeproperty
-        id="[ComponenteTren : (posicionTren:E1, tren:Tr3)]::target::rolename"
-        sizeCalculated="true" type="rolename" userDefined="false" visible="true">
-        <name>posicionTren</name>
-        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-          <userOffsetX>0.0</userOffsetX>
-          <userOffsetY>0.0</userOffsetY>
-          <attached>[ComponenteTren : (posicionTren:E1, tren:Tr3)]::WayPoint::1</attached>
-          <offset_x>8</offset_x>
-          <offset_y>8</offset_y>
-          <placement>TOP</placement>
-        </strategy>
-        <hidden>false</hidden>
-      </edgeproperty>
-    </properties>
-    <waypoints>
-      <edgeproperty
-        id="[ComponenteTren : (posicionTren:E1, tren:Tr3)]::WayPoint::0"
-        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
-        <name>0</name>
-        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
-          <userOffsetX>0.0</userOffsetX>
-          <userOffsetY>0.0</userOffsetY>
-        </strategy>
-        <id>0</id>
-        <specialid>1</specialid>
-        <hidden>false</hidden>
-      </edgeproperty>
-      <edgeproperty
-        id="[ComponenteTren : (posicionTren:E1, tren:Tr3)]::WayPoint::1"
-        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
-        <name>1</name>
-        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
-          <userOffsetX>0.0</userOffsetX>
-          <userOffsetY>0.0</userOffsetY>
-        </strategy>
-        <id>1</id>
-        <specialid>2</specialid>
-        <hidden>false</hidden>
-      </edgeproperty>
-    </waypoints>
-    <hidden>false</hidden>
-    <linkValue>[ComponenteTren : (posicionTren:E1, tren:Tr3)]</linkValue>
   </edge>
   <edge type="BinaryEdge">
     <source>V2</source>
@@ -355,22 +248,6 @@
         <hidden>false</hidden>
       </edgeproperty>
       <edgeproperty
-        id="[interTramoVia : (inter:T10, viaInter:V2)]::AssociationName"
-        sizeCalculated="true" type="associationName" userDefined="false" visible="true">
-        <name>interTramoVia</name>
-        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
-          <userOffsetX>0.0</userOffsetX>
-          <userOffsetY>0.0</userOffsetY>
-          <offsetX>0.0</offsetX>
-          <offsetY>-10.0</offsetY>
-          <related length="2">
-            <related0>[interTramoVia : (inter:T10, viaInter:V2)]::WayPoint::0</related0>
-            <related1>[interTramoVia : (inter:T10, viaInter:V2)]::WayPoint::1</related1>
-          </related>
-        </strategy>
-        <hidden>false</hidden>
-      </edgeproperty>
-      <edgeproperty
         id="[interTramoVia : (inter:T10, viaInter:V2)]::target::rolename"
         sizeCalculated="true" type="rolename" userDefined="false" visible="true">
         <name>inter</name>
@@ -395,6 +272,22 @@
           <offset_x>8</offset_x>
           <offset_y>8</offset_y>
           <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[interTramoVia : (inter:T10, viaInter:V2)]::AssociationName"
+        sizeCalculated="true" type="associationName" userDefined="false" visible="true">
+        <name>interTramoVia</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <offsetX>0.0</offsetX>
+          <offsetY>-10.0</offsetY>
+          <related length="2">
+            <related0>[interTramoVia : (inter:T10, viaInter:V2)]::WayPoint::0</related0>
+            <related1>[interTramoVia : (inter:T10, viaInter:V2)]::WayPoint::1</related1>
+          </related>
         </strategy>
         <hidden>false</hidden>
       </edgeproperty>
@@ -434,6 +327,20 @@
     <name>OesteViaEstacion</name>
     <properties>
       <edgeproperty
+        id="[OesteViaEstacion : (estacionEste:E1, viaOeste:V1)]::source::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="true">
+        <name>viaOeste</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[OesteViaEstacion : (estacionEste:E1, viaOeste:V1)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
         id="[OesteViaEstacion : (estacionEste:E1, viaOeste:V1)]::source::multiplicity"
         sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
         <name>1</name>
@@ -448,13 +355,27 @@
         <hidden>false</hidden>
       </edgeproperty>
       <edgeproperty
-        id="[OesteViaEstacion : (estacionEste:E1, viaOeste:V1)]::source::rolename"
-        sizeCalculated="true" type="rolename" userDefined="false" visible="true">
-        <name>viaOeste</name>
+        id="[OesteViaEstacion : (estacionEste:E1, viaOeste:V1)]::target::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
+        <name>1</name>
         <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
           <userOffsetX>0.0</userOffsetX>
           <userOffsetY>0.0</userOffsetY>
-          <attached>[OesteViaEstacion : (estacionEste:E1, viaOeste:V1)]::WayPoint::0</attached>
+          <attached>[OesteViaEstacion : (estacionEste:E1, viaOeste:V1)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[OesteViaEstacion : (estacionEste:E1, viaOeste:V1)]::target::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="true">
+        <name>estacionEste</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[OesteViaEstacion : (estacionEste:E1, viaOeste:V1)]::WayPoint::1</attached>
           <offset_x>8</offset_x>
           <offset_y>8</offset_y>
           <placement>TOP</placement>
@@ -474,34 +395,6 @@
             <related0>[OesteViaEstacion : (estacionEste:E1, viaOeste:V1)]::WayPoint::0</related0>
             <related1>[OesteViaEstacion : (estacionEste:E1, viaOeste:V1)]::WayPoint::1</related1>
           </related>
-        </strategy>
-        <hidden>false</hidden>
-      </edgeproperty>
-      <edgeproperty
-        id="[OesteViaEstacion : (estacionEste:E1, viaOeste:V1)]::target::rolename"
-        sizeCalculated="true" type="rolename" userDefined="false" visible="true">
-        <name>estacionEste</name>
-        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-          <userOffsetX>0.0</userOffsetX>
-          <userOffsetY>0.0</userOffsetY>
-          <attached>[OesteViaEstacion : (estacionEste:E1, viaOeste:V1)]::WayPoint::1</attached>
-          <offset_x>8</offset_x>
-          <offset_y>8</offset_y>
-          <placement>TOP</placement>
-        </strategy>
-        <hidden>false</hidden>
-      </edgeproperty>
-      <edgeproperty
-        id="[OesteViaEstacion : (estacionEste:E1, viaOeste:V1)]::target::multiplicity"
-        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
-        <name>1</name>
-        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-          <userOffsetX>0.0</userOffsetX>
-          <userOffsetY>0.0</userOffsetY>
-          <attached>[OesteViaEstacion : (estacionEste:E1, viaOeste:V1)]::WayPoint::1</attached>
-          <offset_x>8</offset_x>
-          <offset_y>8</offset_y>
-          <placement>BOTTOM</placement>
         </strategy>
         <hidden>false</hidden>
       </edgeproperty>
@@ -569,18 +462,16 @@
         <hidden>false</hidden>
       </edgeproperty>
       <edgeproperty
-        id="[ultimoTramoVia : (ultimo:T12, viau:V1)]::AssociationName"
-        sizeCalculated="true" type="associationName" userDefined="false" visible="true">
-        <name>ultimoTramoVia</name>
-        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
+        id="[ultimoTramoVia : (ultimo:T12, viau:V1)]::target::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
+        <name>1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
           <userOffsetX>0.0</userOffsetX>
           <userOffsetY>0.0</userOffsetY>
-          <offsetX>0.0</offsetX>
-          <offsetY>-10.0</offsetY>
-          <related length="2">
-            <related0>[ultimoTramoVia : (ultimo:T12, viau:V1)]::WayPoint::0</related0>
-            <related1>[ultimoTramoVia : (ultimo:T12, viau:V1)]::WayPoint::1</related1>
-          </related>
+          <attached>[ultimoTramoVia : (ultimo:T12, viau:V1)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
         </strategy>
         <hidden>false</hidden>
       </edgeproperty>
@@ -599,16 +490,18 @@
         <hidden>false</hidden>
       </edgeproperty>
       <edgeproperty
-        id="[ultimoTramoVia : (ultimo:T12, viau:V1)]::target::multiplicity"
-        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
-        <name>1</name>
-        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+        id="[ultimoTramoVia : (ultimo:T12, viau:V1)]::AssociationName"
+        sizeCalculated="true" type="associationName" userDefined="false" visible="true">
+        <name>ultimoTramoVia</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
           <userOffsetX>0.0</userOffsetX>
           <userOffsetY>0.0</userOffsetY>
-          <attached>[ultimoTramoVia : (ultimo:T12, viau:V1)]::WayPoint::1</attached>
-          <offset_x>8</offset_x>
-          <offset_y>8</offset_y>
-          <placement>BOTTOM</placement>
+          <offsetX>0.0</offsetX>
+          <offsetY>-10.0</offsetY>
+          <related length="2">
+            <related0>[ultimoTramoVia : (ultimo:T12, viau:V1)]::WayPoint::0</related0>
+            <related1>[ultimoTramoVia : (ultimo:T12, viau:V1)]::WayPoint::1</related1>
+          </related>
         </strategy>
         <hidden>false</hidden>
       </edgeproperty>
@@ -641,6 +534,113 @@
     </waypoints>
     <hidden>false</hidden>
     <linkValue>[ultimoTramoVia : (ultimo:T12, viau:V1)]</linkValue>
+  </edge>
+  <edge type="BinaryEdge">
+    <source>Tr1</source>
+    <target>T11</target>
+    <name>ComponenteTren</name>
+    <properties>
+      <edgeproperty
+        id="[ComponenteTren : (posicionTren:T11, tren:Tr1)]::source::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
+        <name>*</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[ComponenteTren : (posicionTren:T11, tren:Tr1)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[ComponenteTren : (posicionTren:T11, tren:Tr1)]::source::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="true">
+        <name>tren {ordered}</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[ComponenteTren : (posicionTren:T11, tren:Tr1)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[ComponenteTren : (posicionTren:T11, tren:Tr1)]::target::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="true">
+        <name>posicionTren</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[ComponenteTren : (posicionTren:T11, tren:Tr1)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[ComponenteTren : (posicionTren:T11, tren:Tr1)]::target::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
+        <name>1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[ComponenteTren : (posicionTren:T11, tren:Tr1)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[ComponenteTren : (posicionTren:T11, tren:Tr1)]::AssociationName"
+        sizeCalculated="true" type="associationName" userDefined="false" visible="true">
+        <name>ComponenteTren</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <offsetX>0.0</offsetX>
+          <offsetY>-10.0</offsetY>
+          <related length="2">
+            <related0>[ComponenteTren : (posicionTren:T11, tren:Tr1)]::WayPoint::0</related0>
+            <related1>[ComponenteTren : (posicionTren:T11, tren:Tr1)]::WayPoint::1</related1>
+          </related>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+    </properties>
+    <waypoints>
+      <edgeproperty
+        id="[ComponenteTren : (posicionTren:T11, tren:Tr1)]::WayPoint::0"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>0</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>0</id>
+        <specialid>1</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[ComponenteTren : (posicionTren:T11, tren:Tr1)]::WayPoint::1"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>1</id>
+        <specialid>2</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+    </waypoints>
+    <hidden>false</hidden>
+    <linkValue>[ComponenteTren : (posicionTren:T11, tren:Tr1)]</linkValue>
   </edge>
   <edge type="BinaryEdge">
     <source>V2</source>
@@ -676,22 +676,6 @@
         <hidden>false</hidden>
       </edgeproperty>
       <edgeproperty
-        id="[primerTramoVia : (primero:T2, viap:V2)]::AssociationName"
-        sizeCalculated="true" type="associationName" userDefined="false" visible="true">
-        <name>primerTramoVia</name>
-        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
-          <userOffsetX>0.0</userOffsetX>
-          <userOffsetY>0.0</userOffsetY>
-          <offsetX>0.0</offsetX>
-          <offsetY>-10.0</offsetY>
-          <related length="2">
-            <related0>[primerTramoVia : (primero:T2, viap:V2)]::WayPoint::0</related0>
-            <related1>[primerTramoVia : (primero:T2, viap:V2)]::WayPoint::1</related1>
-          </related>
-        </strategy>
-        <hidden>false</hidden>
-      </edgeproperty>
-      <edgeproperty
         id="[primerTramoVia : (primero:T2, viap:V2)]::target::rolename"
         sizeCalculated="true" type="rolename" userDefined="false" visible="true">
         <name>primero</name>
@@ -716,6 +700,22 @@
           <offset_x>8</offset_x>
           <offset_y>8</offset_y>
           <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[primerTramoVia : (primero:T2, viap:V2)]::AssociationName"
+        sizeCalculated="true" type="associationName" userDefined="false" visible="true">
+        <name>primerTramoVia</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <offsetX>0.0</offsetX>
+          <offsetY>-10.0</offsetY>
+          <related length="2">
+            <related0>[primerTramoVia : (primero:T2, viap:V2)]::WayPoint::0</related0>
+            <related1>[primerTramoVia : (primero:T2, viap:V2)]::WayPoint::1</related1>
+          </related>
         </strategy>
         <hidden>false</hidden>
       </edgeproperty>
@@ -750,24 +750,224 @@
     <linkValue>[primerTramoVia : (primero:T2, viap:V2)]</linkValue>
   </edge>
   <edge type="BinaryEdge">
-    <source>T10</source>
-    <target>T2</target>
-    <name>Conexion</name>
+    <source>Tr3</source>
+    <target>T1</target>
+    <name>ComponenteTren</name>
     <properties>
       <edgeproperty
-        id="[Conexion : (teste:T10, toeste:T2)]::source::rolename"
+        id="[ComponenteTren : (posicionTren:T1, tren:Tr3)]::source::rolename"
         sizeCalculated="true" type="rolename" userDefined="false" visible="true">
-        <name>teste</name>
+        <name>tren {ordered}</name>
         <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
           <userOffsetX>0.0</userOffsetX>
           <userOffsetY>0.0</userOffsetY>
-          <attached>[Conexion : (teste:T10, toeste:T2)]::WayPoint::0</attached>
+          <attached>[ComponenteTren : (posicionTren:T1, tren:Tr3)]::WayPoint::0</attached>
           <offset_x>8</offset_x>
           <offset_y>8</offset_y>
           <placement>TOP</placement>
         </strategy>
         <hidden>false</hidden>
       </edgeproperty>
+      <edgeproperty
+        id="[ComponenteTren : (posicionTren:T1, tren:Tr3)]::source::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
+        <name>*</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[ComponenteTren : (posicionTren:T1, tren:Tr3)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[ComponenteTren : (posicionTren:T1, tren:Tr3)]::target::rolename"
+        sizeCalculated="true" type="rolename" userDefined="true" visible="true">
+        <name>posicionTren</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>-61.0</userOffsetX>
+          <userOffsetY>-45.0</userOffsetY>
+          <attached>[ComponenteTren : (posicionTren:T1, tren:Tr3)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[ComponenteTren : (posicionTren:T1, tren:Tr3)]::target::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
+        <name>1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[ComponenteTren : (posicionTren:T1, tren:Tr3)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[ComponenteTren : (posicionTren:T1, tren:Tr3)]::AssociationName"
+        sizeCalculated="true" type="associationName" userDefined="false" visible="true">
+        <name>ComponenteTren</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <offsetX>0.0</offsetX>
+          <offsetY>-10.0</offsetY>
+          <related length="2">
+            <related0>[ComponenteTren : (posicionTren:T1, tren:Tr3)]::WayPoint::0</related0>
+            <related1>[ComponenteTren : (posicionTren:T1, tren:Tr3)]::WayPoint::1</related1>
+          </related>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+    </properties>
+    <waypoints>
+      <edgeproperty
+        id="[ComponenteTren : (posicionTren:T1, tren:Tr3)]::WayPoint::0"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>0</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>0</id>
+        <specialid>1</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[ComponenteTren : (posicionTren:T1, tren:Tr3)]::WayPoint::1"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>1</id>
+        <specialid>2</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+    </waypoints>
+    <hidden>false</hidden>
+    <linkValue>[ComponenteTren : (posicionTren:T1, tren:Tr3)]</linkValue>
+  </edge>
+  <edge type="BinaryEdge">
+    <source>Tr2</source>
+    <target>T2</target>
+    <name>ComponenteTren</name>
+    <properties>
+      <edgeproperty
+        id="[ComponenteTren : (posicionTren:T2, tren:Tr2)]::source::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="true">
+        <name>tren {ordered}</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[ComponenteTren : (posicionTren:T2, tren:Tr2)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[ComponenteTren : (posicionTren:T2, tren:Tr2)]::source::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
+        <name>*</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[ComponenteTren : (posicionTren:T2, tren:Tr2)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[ComponenteTren : (posicionTren:T2, tren:Tr2)]::target::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="true">
+        <name>posicionTren</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[ComponenteTren : (posicionTren:T2, tren:Tr2)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[ComponenteTren : (posicionTren:T2, tren:Tr2)]::target::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
+        <name>1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[ComponenteTren : (posicionTren:T2, tren:Tr2)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[ComponenteTren : (posicionTren:T2, tren:Tr2)]::AssociationName"
+        sizeCalculated="true" type="associationName" userDefined="false" visible="true">
+        <name>ComponenteTren</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <offsetX>0.0</offsetX>
+          <offsetY>-10.0</offsetY>
+          <related length="2">
+            <related0>[ComponenteTren : (posicionTren:T2, tren:Tr2)]::WayPoint::0</related0>
+            <related1>[ComponenteTren : (posicionTren:T2, tren:Tr2)]::WayPoint::1</related1>
+          </related>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+    </properties>
+    <waypoints>
+      <edgeproperty
+        id="[ComponenteTren : (posicionTren:T2, tren:Tr2)]::WayPoint::0"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>0</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>0</id>
+        <specialid>1</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[ComponenteTren : (posicionTren:T2, tren:Tr2)]::WayPoint::1"
+        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
+        <name>1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+        </strategy>
+        <id>1</id>
+        <specialid>2</specialid>
+        <hidden>false</hidden>
+      </edgeproperty>
+    </waypoints>
+    <hidden>false</hidden>
+    <linkValue>[ComponenteTren : (posicionTren:T2, tren:Tr2)]</linkValue>
+  </edge>
+  <edge type="BinaryEdge">
+    <source>T10</source>
+    <target>T2</target>
+    <name>Conexion</name>
+    <properties>
       <edgeproperty
         id="[Conexion : (teste:T10, toeste:T2)]::source::multiplicity"
         sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
@@ -783,18 +983,30 @@
         <hidden>false</hidden>
       </edgeproperty>
       <edgeproperty
-        id="[Conexion : (teste:T10, toeste:T2)]::AssociationName"
-        sizeCalculated="true" type="associationName" userDefined="false" visible="true">
-        <name>Conexion</name>
-        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
+        id="[Conexion : (teste:T10, toeste:T2)]::source::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="true">
+        <name>teste</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
           <userOffsetX>0.0</userOffsetX>
           <userOffsetY>0.0</userOffsetY>
-          <offsetX>0.0</offsetX>
-          <offsetY>-10.0</offsetY>
-          <related length="2">
-            <related0>[Conexion : (teste:T10, toeste:T2)]::WayPoint::0</related0>
-            <related1>[Conexion : (teste:T10, toeste:T2)]::WayPoint::1</related1>
-          </related>
+          <attached>[Conexion : (teste:T10, toeste:T2)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[Conexion : (teste:T10, toeste:T2)]::target::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
+        <name>0..1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <attached>[Conexion : (teste:T10, toeste:T2)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
         </strategy>
         <hidden>false</hidden>
       </edgeproperty>
@@ -813,16 +1025,18 @@
         <hidden>false</hidden>
       </edgeproperty>
       <edgeproperty
-        id="[Conexion : (teste:T10, toeste:T2)]::target::multiplicity"
-        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
-        <name>0..1</name>
-        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+        id="[Conexion : (teste:T10, toeste:T2)]::AssociationName"
+        sizeCalculated="true" type="associationName" userDefined="false" visible="true">
+        <name>Conexion</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
           <userOffsetX>0.0</userOffsetX>
           <userOffsetY>0.0</userOffsetY>
-          <attached>[Conexion : (teste:T10, toeste:T2)]::WayPoint::1</attached>
-          <offset_x>8</offset_x>
-          <offset_y>8</offset_y>
-          <placement>BOTTOM</placement>
+          <offsetX>0.0</offsetX>
+          <offsetY>-10.0</offsetY>
+          <related length="2">
+            <related0>[Conexion : (teste:T10, toeste:T2)]::WayPoint::0</related0>
+            <related1>[Conexion : (teste:T10, toeste:T2)]::WayPoint::1</related1>
+          </related>
         </strategy>
         <hidden>false</hidden>
       </edgeproperty>
@@ -890,18 +1104,16 @@
         <hidden>false</hidden>
       </edgeproperty>
       <edgeproperty
-        id="[OesteViaEstacion : (estacionEste:E2, viaOeste:V2)]::AssociationName"
-        sizeCalculated="true" type="associationName" userDefined="false" visible="true">
-        <name>OesteViaEstacion</name>
-        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
+        id="[OesteViaEstacion : (estacionEste:E2, viaOeste:V2)]::target::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
+        <name>1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
           <userOffsetX>0.0</userOffsetX>
           <userOffsetY>0.0</userOffsetY>
-          <offsetX>0.0</offsetX>
-          <offsetY>-10.0</offsetY>
-          <related length="2">
-            <related0>[OesteViaEstacion : (estacionEste:E2, viaOeste:V2)]::WayPoint::0</related0>
-            <related1>[OesteViaEstacion : (estacionEste:E2, viaOeste:V2)]::WayPoint::1</related1>
-          </related>
+          <attached>[OesteViaEstacion : (estacionEste:E2, viaOeste:V2)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
         </strategy>
         <hidden>false</hidden>
       </edgeproperty>
@@ -920,16 +1132,18 @@
         <hidden>false</hidden>
       </edgeproperty>
       <edgeproperty
-        id="[OesteViaEstacion : (estacionEste:E2, viaOeste:V2)]::target::multiplicity"
-        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
-        <name>1</name>
-        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+        id="[OesteViaEstacion : (estacionEste:E2, viaOeste:V2)]::AssociationName"
+        sizeCalculated="true" type="associationName" userDefined="false" visible="true">
+        <name>OesteViaEstacion</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
           <userOffsetX>0.0</userOffsetX>
           <userOffsetY>0.0</userOffsetY>
-          <attached>[OesteViaEstacion : (estacionEste:E2, viaOeste:V2)]::WayPoint::1</attached>
-          <offset_x>8</offset_x>
-          <offset_y>8</offset_y>
-          <placement>BOTTOM</placement>
+          <offsetX>0.0</offsetX>
+          <offsetY>-10.0</offsetY>
+          <related length="2">
+            <related0>[OesteViaEstacion : (estacionEste:E2, viaOeste:V2)]::WayPoint::0</related0>
+            <related1>[OesteViaEstacion : (estacionEste:E2, viaOeste:V2)]::WayPoint::1</related1>
+          </related>
         </strategy>
         <hidden>false</hidden>
       </edgeproperty>
@@ -969,20 +1183,6 @@
     <name>primerTramoVia</name>
     <properties>
       <edgeproperty
-        id="[primerTramoVia : (primero:T11, viap:V1)]::source::multiplicity"
-        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
-        <name>0..1</name>
-        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-          <userOffsetX>0.0</userOffsetX>
-          <userOffsetY>0.0</userOffsetY>
-          <attached>[primerTramoVia : (primero:T11, viap:V1)]::WayPoint::0</attached>
-          <offset_x>8</offset_x>
-          <offset_y>8</offset_y>
-          <placement>BOTTOM</placement>
-        </strategy>
-        <hidden>false</hidden>
-      </edgeproperty>
-      <edgeproperty
         id="[primerTramoVia : (primero:T11, viap:V1)]::source::rolename"
         sizeCalculated="true" type="rolename" userDefined="false" visible="true">
         <name>viap</name>
@@ -997,18 +1197,16 @@
         <hidden>false</hidden>
       </edgeproperty>
       <edgeproperty
-        id="[primerTramoVia : (primero:T11, viap:V1)]::AssociationName"
-        sizeCalculated="true" type="associationName" userDefined="false" visible="true">
-        <name>primerTramoVia</name>
-        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
+        id="[primerTramoVia : (primero:T11, viap:V1)]::source::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
+        <name>0..1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
           <userOffsetX>0.0</userOffsetX>
           <userOffsetY>0.0</userOffsetY>
-          <offsetX>0.0</offsetX>
-          <offsetY>-10.0</offsetY>
-          <related length="2">
-            <related0>[primerTramoVia : (primero:T11, viap:V1)]::WayPoint::0</related0>
-            <related1>[primerTramoVia : (primero:T11, viap:V1)]::WayPoint::1</related1>
-          </related>
+          <attached>[primerTramoVia : (primero:T11, viap:V1)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
         </strategy>
         <hidden>false</hidden>
       </edgeproperty>
@@ -1037,6 +1235,22 @@
           <offset_x>8</offset_x>
           <offset_y>8</offset_y>
           <placement>TOP</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[primerTramoVia : (primero:T11, viap:V1)]::AssociationName"
+        sizeCalculated="true" type="associationName" userDefined="false" visible="true">
+        <name>primerTramoVia</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <offsetX>0.0</offsetX>
+          <offsetY>-10.0</offsetY>
+          <related length="2">
+            <related0>[primerTramoVia : (primero:T11, viap:V1)]::WayPoint::0</related0>
+            <related1>[primerTramoVia : (primero:T11, viap:V1)]::WayPoint::1</related1>
+          </related>
         </strategy>
         <hidden>false</hidden>
       </edgeproperty>
@@ -1104,18 +1318,16 @@
         <hidden>false</hidden>
       </edgeproperty>
       <edgeproperty
-        id="[Conexion : (teste:T12, toeste:T11)]::AssociationName"
-        sizeCalculated="true" type="associationName" userDefined="false" visible="true">
-        <name>Conexion</name>
-        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
+        id="[Conexion : (teste:T12, toeste:T11)]::target::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="true">
+        <name>toeste</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
           <userOffsetX>0.0</userOffsetX>
           <userOffsetY>0.0</userOffsetY>
-          <offsetX>0.0</offsetX>
-          <offsetY>-10.0</offsetY>
-          <related length="2">
-            <related0>[Conexion : (teste:T12, toeste:T11)]::WayPoint::0</related0>
-            <related1>[Conexion : (teste:T12, toeste:T11)]::WayPoint::1</related1>
-          </related>
+          <attached>[Conexion : (teste:T12, toeste:T11)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
         </strategy>
         <hidden>false</hidden>
       </edgeproperty>
@@ -1134,16 +1346,18 @@
         <hidden>false</hidden>
       </edgeproperty>
       <edgeproperty
-        id="[Conexion : (teste:T12, toeste:T11)]::target::rolename"
-        sizeCalculated="true" type="rolename" userDefined="false" visible="true">
-        <name>toeste</name>
-        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+        id="[Conexion : (teste:T12, toeste:T11)]::AssociationName"
+        sizeCalculated="true" type="associationName" userDefined="false" visible="true">
+        <name>Conexion</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
           <userOffsetX>0.0</userOffsetX>
           <userOffsetY>0.0</userOffsetY>
-          <attached>[Conexion : (teste:T12, toeste:T11)]::WayPoint::1</attached>
-          <offset_x>8</offset_x>
-          <offset_y>8</offset_y>
-          <placement>TOP</placement>
+          <offsetX>0.0</offsetX>
+          <offsetY>-10.0</offsetY>
+          <related length="2">
+            <related0>[Conexion : (teste:T12, toeste:T11)]::WayPoint::0</related0>
+            <related1>[Conexion : (teste:T12, toeste:T11)]::WayPoint::1</related1>
+          </related>
         </strategy>
         <hidden>false</hidden>
       </edgeproperty>
@@ -1178,345 +1392,10 @@
     <linkValue>[Conexion : (teste:T12, toeste:T11)]</linkValue>
   </edge>
   <edge type="BinaryEdge">
-    <source>Tr2</source>
-    <target>T1</target>
-    <name>ComponenteTren</name>
-    <properties>
-      <edgeproperty
-        id="[ComponenteTren : (posicionTren:T1, tren:Tr2)]::source::rolename"
-        sizeCalculated="true" type="rolename" userDefined="false" visible="true">
-        <name>tren {ordered}</name>
-        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-          <userOffsetX>0.0</userOffsetX>
-          <userOffsetY>0.0</userOffsetY>
-          <attached>[ComponenteTren : (posicionTren:T1, tren:Tr2)]::WayPoint::0</attached>
-          <offset_x>8</offset_x>
-          <offset_y>8</offset_y>
-          <placement>TOP</placement>
-        </strategy>
-        <hidden>false</hidden>
-      </edgeproperty>
-      <edgeproperty
-        id="[ComponenteTren : (posicionTren:T1, tren:Tr2)]::source::multiplicity"
-        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
-        <name>*</name>
-        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-          <userOffsetX>0.0</userOffsetX>
-          <userOffsetY>0.0</userOffsetY>
-          <attached>[ComponenteTren : (posicionTren:T1, tren:Tr2)]::WayPoint::0</attached>
-          <offset_x>8</offset_x>
-          <offset_y>8</offset_y>
-          <placement>BOTTOM</placement>
-        </strategy>
-        <hidden>false</hidden>
-      </edgeproperty>
-      <edgeproperty
-        id="[ComponenteTren : (posicionTren:T1, tren:Tr2)]::AssociationName"
-        sizeCalculated="true" type="associationName" userDefined="false" visible="true">
-        <name>ComponenteTren</name>
-        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
-          <userOffsetX>0.0</userOffsetX>
-          <userOffsetY>0.0</userOffsetY>
-          <offsetX>0.0</offsetX>
-          <offsetY>-10.0</offsetY>
-          <related length="2">
-            <related0>[ComponenteTren : (posicionTren:T1, tren:Tr2)]::WayPoint::0</related0>
-            <related1>[ComponenteTren : (posicionTren:T1, tren:Tr2)]::WayPoint::1</related1>
-          </related>
-        </strategy>
-        <hidden>false</hidden>
-      </edgeproperty>
-      <edgeproperty
-        id="[ComponenteTren : (posicionTren:T1, tren:Tr2)]::target::rolename"
-        sizeCalculated="true" type="rolename" userDefined="false" visible="true">
-        <name>posicionTren</name>
-        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-          <userOffsetX>0.0</userOffsetX>
-          <userOffsetY>0.0</userOffsetY>
-          <attached>[ComponenteTren : (posicionTren:T1, tren:Tr2)]::WayPoint::1</attached>
-          <offset_x>8</offset_x>
-          <offset_y>8</offset_y>
-          <placement>TOP</placement>
-        </strategy>
-        <hidden>false</hidden>
-      </edgeproperty>
-      <edgeproperty
-        id="[ComponenteTren : (posicionTren:T1, tren:Tr2)]::target::multiplicity"
-        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
-        <name>1</name>
-        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-          <userOffsetX>0.0</userOffsetX>
-          <userOffsetY>0.0</userOffsetY>
-          <attached>[ComponenteTren : (posicionTren:T1, tren:Tr2)]::WayPoint::1</attached>
-          <offset_x>8</offset_x>
-          <offset_y>8</offset_y>
-          <placement>BOTTOM</placement>
-        </strategy>
-        <hidden>false</hidden>
-      </edgeproperty>
-    </properties>
-    <waypoints>
-      <edgeproperty
-        id="[ComponenteTren : (posicionTren:T1, tren:Tr2)]::WayPoint::0"
-        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
-        <name>0</name>
-        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
-          <userOffsetX>0.0</userOffsetX>
-          <userOffsetY>0.0</userOffsetY>
-        </strategy>
-        <id>0</id>
-        <specialid>1</specialid>
-        <hidden>false</hidden>
-      </edgeproperty>
-      <edgeproperty
-        id="[ComponenteTren : (posicionTren:T1, tren:Tr2)]::WayPoint::1"
-        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
-        <name>1</name>
-        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
-          <userOffsetX>0.0</userOffsetX>
-          <userOffsetY>0.0</userOffsetY>
-        </strategy>
-        <id>1</id>
-        <specialid>2</specialid>
-        <hidden>false</hidden>
-      </edgeproperty>
-    </waypoints>
-    <hidden>false</hidden>
-    <linkValue>[ComponenteTren : (posicionTren:T1, tren:Tr2)]</linkValue>
-  </edge>
-  <edge type="BinaryEdge">
-    <source>Tr3</source>
-    <target>E1</target>
-    <name>SalirEstacion</name>
-    <properties>
-      <edgeproperty
-        id="[SalirEstacion : (estacion:E1, sigSalir:Tr3)]::source::rolename"
-        sizeCalculated="true" type="rolename" userDefined="false" visible="true">
-        <name>sigSalir</name>
-        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-          <userOffsetX>0.0</userOffsetX>
-          <userOffsetY>0.0</userOffsetY>
-          <attached>[SalirEstacion : (estacion:E1, sigSalir:Tr3)]::WayPoint::0</attached>
-          <offset_x>8</offset_x>
-          <offset_y>8</offset_y>
-          <placement>TOP</placement>
-        </strategy>
-        <hidden>false</hidden>
-      </edgeproperty>
-      <edgeproperty
-        id="[SalirEstacion : (estacion:E1, sigSalir:Tr3)]::source::multiplicity"
-        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
-        <name>0..1</name>
-        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-          <userOffsetX>0.0</userOffsetX>
-          <userOffsetY>0.0</userOffsetY>
-          <attached>[SalirEstacion : (estacion:E1, sigSalir:Tr3)]::WayPoint::0</attached>
-          <offset_x>8</offset_x>
-          <offset_y>8</offset_y>
-          <placement>BOTTOM</placement>
-        </strategy>
-        <hidden>false</hidden>
-      </edgeproperty>
-      <edgeproperty
-        id="[SalirEstacion : (estacion:E1, sigSalir:Tr3)]::AssociationName"
-        sizeCalculated="true" type="associationName" userDefined="false" visible="true">
-        <name>SalirEstacion</name>
-        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
-          <userOffsetX>0.0</userOffsetX>
-          <userOffsetY>0.0</userOffsetY>
-          <offsetX>0.0</offsetX>
-          <offsetY>-10.0</offsetY>
-          <related length="2">
-            <related0>[SalirEstacion : (estacion:E1, sigSalir:Tr3)]::WayPoint::0</related0>
-            <related1>[SalirEstacion : (estacion:E1, sigSalir:Tr3)]::WayPoint::1</related1>
-          </related>
-        </strategy>
-        <hidden>false</hidden>
-      </edgeproperty>
-      <edgeproperty
-        id="[SalirEstacion : (estacion:E1, sigSalir:Tr3)]::target::rolename"
-        sizeCalculated="true" type="rolename" userDefined="false" visible="true">
-        <name>estacion</name>
-        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-          <userOffsetX>0.0</userOffsetX>
-          <userOffsetY>0.0</userOffsetY>
-          <attached>[SalirEstacion : (estacion:E1, sigSalir:Tr3)]::WayPoint::1</attached>
-          <offset_x>8</offset_x>
-          <offset_y>8</offset_y>
-          <placement>TOP</placement>
-        </strategy>
-        <hidden>false</hidden>
-      </edgeproperty>
-      <edgeproperty
-        id="[SalirEstacion : (estacion:E1, sigSalir:Tr3)]::target::multiplicity"
-        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
-        <name>0..1</name>
-        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-          <userOffsetX>0.0</userOffsetX>
-          <userOffsetY>0.0</userOffsetY>
-          <attached>[SalirEstacion : (estacion:E1, sigSalir:Tr3)]::WayPoint::1</attached>
-          <offset_x>8</offset_x>
-          <offset_y>8</offset_y>
-          <placement>BOTTOM</placement>
-        </strategy>
-        <hidden>false</hidden>
-      </edgeproperty>
-    </properties>
-    <waypoints>
-      <edgeproperty
-        id="[SalirEstacion : (estacion:E1, sigSalir:Tr3)]::WayPoint::0"
-        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
-        <name>0</name>
-        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
-          <userOffsetX>0.0</userOffsetX>
-          <userOffsetY>0.0</userOffsetY>
-        </strategy>
-        <id>0</id>
-        <specialid>1</specialid>
-        <hidden>false</hidden>
-      </edgeproperty>
-      <edgeproperty
-        id="[SalirEstacion : (estacion:E1, sigSalir:Tr3)]::WayPoint::1"
-        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
-        <name>1</name>
-        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
-          <userOffsetX>0.0</userOffsetX>
-          <userOffsetY>0.0</userOffsetY>
-        </strategy>
-        <id>1</id>
-        <specialid>2</specialid>
-        <hidden>false</hidden>
-      </edgeproperty>
-    </waypoints>
-    <hidden>false</hidden>
-    <linkValue>[SalirEstacion : (estacion:E1, sigSalir:Tr3)]</linkValue>
-  </edge>
-  <edge type="BinaryEdge">
-    <source>Tr1</source>
-    <target>T10</target>
-    <name>ComponenteTren</name>
-    <properties>
-      <edgeproperty
-        id="[ComponenteTren : (posicionTren:T10, tren:Tr1)]::source::multiplicity"
-        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
-        <name>*</name>
-        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-          <userOffsetX>0.0</userOffsetX>
-          <userOffsetY>0.0</userOffsetY>
-          <attached>[ComponenteTren : (posicionTren:T10, tren:Tr1)]::WayPoint::0</attached>
-          <offset_x>8</offset_x>
-          <offset_y>8</offset_y>
-          <placement>BOTTOM</placement>
-        </strategy>
-        <hidden>false</hidden>
-      </edgeproperty>
-      <edgeproperty
-        id="[ComponenteTren : (posicionTren:T10, tren:Tr1)]::source::rolename"
-        sizeCalculated="true" type="rolename" userDefined="false" visible="true">
-        <name>tren {ordered}</name>
-        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-          <userOffsetX>0.0</userOffsetX>
-          <userOffsetY>0.0</userOffsetY>
-          <attached>[ComponenteTren : (posicionTren:T10, tren:Tr1)]::WayPoint::0</attached>
-          <offset_x>8</offset_x>
-          <offset_y>8</offset_y>
-          <placement>TOP</placement>
-        </strategy>
-        <hidden>false</hidden>
-      </edgeproperty>
-      <edgeproperty
-        id="[ComponenteTren : (posicionTren:T10, tren:Tr1)]::AssociationName"
-        sizeCalculated="true" type="associationName" userDefined="false" visible="true">
-        <name>ComponenteTren</name>
-        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
-          <userOffsetX>0.0</userOffsetX>
-          <userOffsetY>0.0</userOffsetY>
-          <offsetX>0.0</offsetX>
-          <offsetY>-10.0</offsetY>
-          <related length="2">
-            <related0>[ComponenteTren : (posicionTren:T10, tren:Tr1)]::WayPoint::0</related0>
-            <related1>[ComponenteTren : (posicionTren:T10, tren:Tr1)]::WayPoint::1</related1>
-          </related>
-        </strategy>
-        <hidden>false</hidden>
-      </edgeproperty>
-      <edgeproperty
-        id="[ComponenteTren : (posicionTren:T10, tren:Tr1)]::target::rolename"
-        sizeCalculated="true" type="rolename" userDefined="false" visible="true">
-        <name>posicionTren</name>
-        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-          <userOffsetX>0.0</userOffsetX>
-          <userOffsetY>0.0</userOffsetY>
-          <attached>[ComponenteTren : (posicionTren:T10, tren:Tr1)]::WayPoint::1</attached>
-          <offset_x>8</offset_x>
-          <offset_y>8</offset_y>
-          <placement>TOP</placement>
-        </strategy>
-        <hidden>false</hidden>
-      </edgeproperty>
-      <edgeproperty
-        id="[ComponenteTren : (posicionTren:T10, tren:Tr1)]::target::multiplicity"
-        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
-        <name>1</name>
-        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-          <userOffsetX>0.0</userOffsetX>
-          <userOffsetY>0.0</userOffsetY>
-          <attached>[ComponenteTren : (posicionTren:T10, tren:Tr1)]::WayPoint::1</attached>
-          <offset_x>8</offset_x>
-          <offset_y>8</offset_y>
-          <placement>BOTTOM</placement>
-        </strategy>
-        <hidden>false</hidden>
-      </edgeproperty>
-    </properties>
-    <waypoints>
-      <edgeproperty
-        id="[ComponenteTren : (posicionTren:T10, tren:Tr1)]::WayPoint::0"
-        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
-        <name>0</name>
-        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
-          <userOffsetX>0.0</userOffsetX>
-          <userOffsetY>0.0</userOffsetY>
-        </strategy>
-        <id>0</id>
-        <specialid>1</specialid>
-        <hidden>false</hidden>
-      </edgeproperty>
-      <edgeproperty
-        id="[ComponenteTren : (posicionTren:T10, tren:Tr1)]::WayPoint::1"
-        sizeCalculated="true" type="WayPoint" userDefined="false" visible="true">
-        <name>1</name>
-        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
-          <userOffsetX>0.0</userOffsetX>
-          <userOffsetY>0.0</userOffsetY>
-        </strategy>
-        <id>1</id>
-        <specialid>2</specialid>
-        <hidden>false</hidden>
-      </edgeproperty>
-    </waypoints>
-    <hidden>false</hidden>
-    <linkValue>[ComponenteTren : (posicionTren:T10, tren:Tr1)]</linkValue>
-  </edge>
-  <edge type="BinaryEdge">
     <source>V2</source>
     <target>E1</target>
     <name>EsteViaEstacion</name>
     <properties>
-      <edgeproperty
-        id="[EsteViaEstacion : (estacionOeste:E1, viaEste:V2)]::source::multiplicity"
-        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
-        <name>1</name>
-        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-          <userOffsetX>0.0</userOffsetX>
-          <userOffsetY>0.0</userOffsetY>
-          <attached>[EsteViaEstacion : (estacionOeste:E1, viaEste:V2)]::WayPoint::0</attached>
-          <offset_x>8</offset_x>
-          <offset_y>8</offset_y>
-          <placement>BOTTOM</placement>
-        </strategy>
-        <hidden>false</hidden>
-      </edgeproperty>
       <edgeproperty
         id="[EsteViaEstacion : (estacionOeste:E1, viaEste:V2)]::source::rolename"
         sizeCalculated="true" type="rolename" userDefined="false" visible="true">
@@ -1532,18 +1411,16 @@
         <hidden>false</hidden>
       </edgeproperty>
       <edgeproperty
-        id="[EsteViaEstacion : (estacionOeste:E1, viaEste:V2)]::AssociationName"
-        sizeCalculated="true" type="associationName" userDefined="false" visible="true">
-        <name>EsteViaEstacion</name>
-        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
+        id="[EsteViaEstacion : (estacionOeste:E1, viaEste:V2)]::source::multiplicity"
+        sizeCalculated="true" type="multiplicity" userDefined="false" visible="true">
+        <name>1</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
           <userOffsetX>0.0</userOffsetX>
           <userOffsetY>0.0</userOffsetY>
-          <offsetX>0.0</offsetX>
-          <offsetY>-10.0</offsetY>
-          <related length="2">
-            <related0>[EsteViaEstacion : (estacionOeste:E1, viaEste:V2)]::WayPoint::0</related0>
-            <related1>[EsteViaEstacion : (estacionOeste:E1, viaEste:V2)]::WayPoint::1</related1>
-          </related>
+          <attached>[EsteViaEstacion : (estacionOeste:E1, viaEste:V2)]::WayPoint::0</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>BOTTOM</placement>
         </strategy>
         <hidden>false</hidden>
       </edgeproperty>
@@ -1572,6 +1449,22 @@
           <offset_x>8</offset_x>
           <offset_y>8</offset_y>
           <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[EsteViaEstacion : (estacionOeste:E1, viaEste:V2)]::AssociationName"
+        sizeCalculated="true" type="associationName" userDefined="false" visible="true">
+        <name>EsteViaEstacion</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <offsetX>0.0</offsetX>
+          <offsetY>-10.0</offsetY>
+          <related length="2">
+            <related0>[EsteViaEstacion : (estacionOeste:E1, viaEste:V2)]::WayPoint::0</related0>
+            <related1>[EsteViaEstacion : (estacionOeste:E1, viaEste:V2)]::WayPoint::1</related1>
+          </related>
         </strategy>
         <hidden>false</hidden>
       </edgeproperty>
@@ -1639,18 +1532,16 @@
         <hidden>false</hidden>
       </edgeproperty>
       <edgeproperty
-        id="[EsteViaEstacion : (estacionOeste:E2, viaEste:V1)]::AssociationName"
-        sizeCalculated="true" type="associationName" userDefined="false" visible="true">
-        <name>EsteViaEstacion</name>
-        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
+        id="[EsteViaEstacion : (estacionOeste:E2, viaEste:V1)]::target::rolename"
+        sizeCalculated="true" type="rolename" userDefined="false" visible="true">
+        <name>estacionOeste</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
           <userOffsetX>0.0</userOffsetX>
           <userOffsetY>0.0</userOffsetY>
-          <offsetX>0.0</offsetX>
-          <offsetY>-10.0</offsetY>
-          <related length="2">
-            <related0>[EsteViaEstacion : (estacionOeste:E2, viaEste:V1)]::WayPoint::0</related0>
-            <related1>[EsteViaEstacion : (estacionOeste:E2, viaEste:V1)]::WayPoint::1</related1>
-          </related>
+          <attached>[EsteViaEstacion : (estacionOeste:E2, viaEste:V1)]::WayPoint::1</attached>
+          <offset_x>8</offset_x>
+          <offset_y>8</offset_y>
+          <placement>TOP</placement>
         </strategy>
         <hidden>false</hidden>
       </edgeproperty>
@@ -1669,16 +1560,18 @@
         <hidden>false</hidden>
       </edgeproperty>
       <edgeproperty
-        id="[EsteViaEstacion : (estacionOeste:E2, viaEste:V1)]::target::rolename"
-        sizeCalculated="true" type="rolename" userDefined="false" visible="true">
-        <name>estacionOeste</name>
-        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+        id="[EsteViaEstacion : (estacionOeste:E2, viaEste:V1)]::AssociationName"
+        sizeCalculated="true" type="associationName" userDefined="false" visible="true">
+        <name>EsteViaEstacion</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
           <userOffsetX>0.0</userOffsetX>
           <userOffsetY>0.0</userOffsetY>
-          <attached>[EsteViaEstacion : (estacionOeste:E2, viaEste:V1)]::WayPoint::1</attached>
-          <offset_x>8</offset_x>
-          <offset_y>8</offset_y>
-          <placement>TOP</placement>
+          <offsetX>0.0</offsetX>
+          <offsetY>-10.0</offsetY>
+          <related length="2">
+            <related0>[EsteViaEstacion : (estacionOeste:E2, viaEste:V1)]::WayPoint::0</related0>
+            <related1>[EsteViaEstacion : (estacionOeste:E2, viaEste:V1)]::WayPoint::1</related1>
+          </related>
         </strategy>
         <hidden>false</hidden>
       </edgeproperty>
@@ -1746,22 +1639,6 @@
         <hidden>false</hidden>
       </edgeproperty>
       <edgeproperty
-        id="[ultimoTramoVia : (ultimo:T1, viau:V2)]::AssociationName"
-        sizeCalculated="true" type="associationName" userDefined="false" visible="true">
-        <name>ultimoTramoVia</name>
-        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
-          <userOffsetX>0.0</userOffsetX>
-          <userOffsetY>0.0</userOffsetY>
-          <offsetX>0.0</offsetX>
-          <offsetY>-10.0</offsetY>
-          <related length="2">
-            <related0>[ultimoTramoVia : (ultimo:T1, viau:V2)]::WayPoint::0</related0>
-            <related1>[ultimoTramoVia : (ultimo:T1, viau:V2)]::WayPoint::1</related1>
-          </related>
-        </strategy>
-        <hidden>false</hidden>
-      </edgeproperty>
-      <edgeproperty
         id="[ultimoTramoVia : (ultimo:T1, viau:V2)]::target::rolename"
         sizeCalculated="true" type="rolename" userDefined="false" visible="true">
         <name>ultimo</name>
@@ -1786,6 +1663,22 @@
           <offset_x>8</offset_x>
           <offset_y>8</offset_y>
           <placement>BOTTOM</placement>
+        </strategy>
+        <hidden>false</hidden>
+      </edgeproperty>
+      <edgeproperty
+        id="[ultimoTramoVia : (ultimo:T1, viau:V2)]::AssociationName"
+        sizeCalculated="true" type="associationName" userDefined="false" visible="true">
+        <name>ultimoTramoVia</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
+          <userOffsetX>0.0</userOffsetX>
+          <userOffsetY>0.0</userOffsetY>
+          <offsetX>0.0</offsetX>
+          <offsetY>-10.0</offsetY>
+          <related length="2">
+            <related0>[ultimoTramoVia : (ultimo:T1, viau:V2)]::WayPoint::0</related0>
+            <related1>[ultimoTramoVia : (ultimo:T1, viau:V2)]::WayPoint::1</related1>
+          </related>
         </strategy>
         <hidden>false</hidden>
       </edgeproperty>

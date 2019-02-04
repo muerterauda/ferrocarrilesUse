@@ -52,5 +52,14 @@
 !insert (T10,T2) into Conexion;
 --------------------------------
 
-!V1.actualizaTrenes();
-!E1.actualizaTrenes();
+!Tr3.meMuevo();
+!Tr2.meMuevo();
+!Tr2.meMuevo();
+!Tr2.meMuevo();
+!Tr1.meMuevo();
+!Tr1.meMuevo();
+!Tr3.meMuevo();
+!Tr1.meMuevo();
+!Tr3.meMuevo();
+!Tr2.meMuevo();
+!Tr2.meMuevo();
