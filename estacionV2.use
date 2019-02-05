@@ -29,6 +29,7 @@ class Tren
                     any(true).nombre;
             end;
         end
+        -- PRE: La variable posicionTren debe tener un valor
         pre: not self.posicionTren.oclIsUndefined
         post: true
     -- Mueve el tren de oeste a este
@@ -63,8 +64,11 @@ class Tramo < ComponenteDeRed
             then self.viap.actualizaTrenes()
             end;
         end
+        -- PRE: No debe haber ningun tren en el tramo
         pre: self.nTrenes=0
+        -- POST: Sólo hay un tren en el tramo y ese tren es t
         post: self.nTrenes=1 and self.tren->includes(t)
+
     -- Se modela la salida de un tren t al tramo
     saleTren(t:Tren)
         begin
@@ -74,10 +78,13 @@ class Tramo < ComponenteDeRed
             then self.viau.actualizaTrenes()
             end;
         end
+        -- PRE: Sólo hay un tren en el tramo, que es t y
+        -- si hay un tramo al este, entonces el numero de trenes en el mismo debe ser cero.
         pre: self.nTrenes=1 and self.tren->includes(t) and if not self.teste.oclIsUndefined() 
         then self.teste.nTrenes=0 
         else true
         endif
+        -- POST: El numero de trenes en el tramo es cero y no se incluye ya a t.
         post: self.nTrenes=0 and self.tren->excludes(t)
 end
 
@@ -92,8 +99,11 @@ class Estacion < ComponenteDeRed
                 self.actualizaTrenes();
                 self.actSiguienteEnSalir()
             end
+            -- PRE: En la estacion no se encuentra el tren t
             pre: self.tren->excludes(t)
-            post:  self.tren->includes(t) and self.nTrenes-1=self.nTrenes@pre
+            -- POST: En la estacion se encuentra el tren y ahora hay un tren mas en la estacion
+            post: self.tren->includes(t) and self.nTrenes-1=self.nTrenes@pre
+
         -- Se modela la salida del tren t de la estacion
         saleTren(t:Tren)
             begin
@@ -101,8 +111,14 @@ class Estacion < ComponenteDeRed
                 self.actualizaTrenes();
                 self.actSiguienteEnSalir()
             end
+            -- PRE: El tren t se encuentra en la estacion y
+            -- hay al menos un tren en la estacion y
+            -- t es el siguiente tren en salir de la estacion y
+            -- no hay ningun tren en el primer tramo de la via este
             pre: self.tren->includes(t) and self.nTrenes>0 and self.sigSalir=t and self.viaEste.primero.nTrenes=0
+            -- POST: Hay un tren menos en la estacion y ya no se incluye t en los trenes de la estacion
             post: self.nTrenes+1=self.nTrenes@pre and self.tren->excludes(t)
+
         -- Se actualiza el siguiente tren en la relacion que debe salir de la estacion 
         actSiguienteEnSalir()
             begin
@@ -120,6 +136,8 @@ class Estacion < ComponenteDeRed
                 end;
             end
             pre: true
+            -- POST: No hay ningun tren en la estacion y por lo tanto no se ha definido el siguiente en salir o
+            -- el primer tren en la lista es el siguiente en salir.
             post: (self.tren->size()=0 and self.sigSalir.oclIsUndefined()) or (self.tren->first()=self.sigSalir)
 end
 
@@ -244,11 +262,11 @@ context Via inv nombresViasDiferentes:
     Via.allInstances()->select(v:Via | v<>self and v.nombre = self.nombre)->size()=0
 
 -- b) Todas las estaciones tienen nombres diferentes
-context Estacion inv nombresEstacionDistintos: --FAIL, attr
+context Estacion inv nombresEstacionDistintos:
     Estacion.allInstances()->select(e:Estacion | e<>self and e.nombre = self.nombre)->size()=0
 
 -- c) En cada estacion nTrenes coincide con el numero de trenes en la estacion
-context Estacion inv nTrenesCorrecto: --FAIL
+context Estacion inv nTrenesCorrecto:
     self.nTrenes = self.tren->size()
 
 -- d) En cada tramo, hay a lo sumo un tren
@@ -256,7 +274,7 @@ context Tramo inv unTren:
     self.tren->size()<=1
 
 -- e) En cada tramo, nTrenes coincide con el numero de trenes en cada tramo
-context Tramo inv nTrenesCorrectoTramo: --FAIL
+context Tramo inv nTrenesCorrectoTramo:
     self.nTrenes = self.tren->size()
 
 -- f) En cada via, nTrenes, coincide con el numero de trenes en esa via
@@ -280,3 +298,10 @@ let com: ComponenteDeRed=self.posicionTren in
     else let comVia: Tramo= com.oclAsType(Tramo) in 
         (((comVia.viaInter->asBag())->union(comVia.viau->asBag()))->union(comVia.viap->asBag()))->asSequence()->first().nombre = self.posicion
     endif
+
+
+-- INVARIANTE DE LA SEGUNDA FASE
+
+-- Invariante: en una estacion el tren siguiente en salir es uno de los trenes (el primero de la relacion ordenada) de la estacion
+context Estacion inv sigEnSalir:
+    (self.tren->size()=0 and self.sigSalir.oclIsUndefined()) or (self.tren->first()=self.sigSalir)
